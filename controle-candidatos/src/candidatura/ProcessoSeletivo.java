@@ -4,7 +4,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class ProcessoSeletivo {
     public static void main(String[] args){
-        
+        selecaoCandidatos();
     }
 
     static void selecaoCandidatos(){
@@ -18,7 +18,7 @@ public class ProcessoSeletivo {
             String candidato = candidatos[candidadosAtual];
             double salarioPretendido = valorPretendido();
             
-            System.out.println("O Candidato" + candidato + " solicitou este valor de salário: " + salarioPretendido);
+            System.out.println("O Candidato " + candidato + " solicitou este valor de salário: " + salarioPretendido);
             if (salarioBase >= salarioPretendido) {
                 System.out.println("O candidato " + candidato + " foi selecionado para a vaga.");
                 candidatosSelecionados++;
