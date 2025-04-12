@@ -3,7 +3,7 @@ public class ComputadorPedrinho {
         
         ServicoMensagemInstantanea smi = null;
 
-        String appEscolhido="fb";
+        String appEscolhido="msn";
 
         if(appEscolhido.equals("msn"))
             smi = new MSNMenseger();
