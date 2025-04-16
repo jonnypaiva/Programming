@@ -7,9 +7,13 @@ export default function LoginScreen() {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // TODO: Implement authentication
-    router.replace('/(tabs)');
+    if (email && password) {
+      router.replace('/(tabs)');
+    } else {
+      alert("Preencha email e senha");
+    }
   };
+  
 
   return (
     <View style={styles.container}>
