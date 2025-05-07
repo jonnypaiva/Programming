@@ -32,9 +32,6 @@ public class UsuarioRepository {
         System.out.println(String.format("GET/id - Recebendo o id: %d para localizar um usuário", id));
         return new Usuario("gleyson","password");
     }
-    public List<Usuario> findAll() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findAll'");
-    }
+ 
 
 }
